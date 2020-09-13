@@ -1,24 +1,24 @@
 const sourceArray = [1, 2, 3, -9];
 
-function mapToNegativize(arr){
+function map(arr){
     return arr.map(function(element) {
       return -1 * element;
   });
 }
 
-function mapToNoChange(arr){
+function map(arr){
     return arr.map(function(element) {
       return element;
   });
 }
 
-function mapToDouble(arr){
+function map(arr){
     return arr.map(function(element) {
       return element * 2;
   });
 }
 
-function mapToSquare(arr){
+function map(arr){
     return arr.map(function(element) {
       return Math.pow(element,2);
   });
