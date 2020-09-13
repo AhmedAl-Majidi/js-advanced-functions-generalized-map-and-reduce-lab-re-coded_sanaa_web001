@@ -2,7 +2,7 @@ const sourceArray = [1, 2, 3, -9];
 
 function map(arr){
     return arr.map(function(element) {
-      return -1 * element;
+      return (-1 * element)/element;
   });
 }
 
