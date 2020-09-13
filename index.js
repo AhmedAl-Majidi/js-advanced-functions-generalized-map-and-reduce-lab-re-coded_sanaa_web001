@@ -1,25 +1,12 @@
 const sourceArray = [1, 2, 3, -9];
 
-function map(arr){
-    return arr.map(function(element) {
-      return (-1 * element)/element;
-  });
-}
 
-function map(arr){
-    return arr.map(function(element) {
-      return element;
-  });
-}
+function map(sourceArray, fn) {
+  let arr = []
 
-function map(arr){
-    return arr.map(function(element) {
-      return element * 2;
-  });
-}
-
-function map(arr){
-    return arr.map(function(element) {
-      return Math.pow(element,2);
-  });
+  for (let i = 0; i < sourceArray.length; i++) {
+    let theElement = sourceArray[i]
+    arr.push(fn(theElement))
+  }
+return arr;
 }
