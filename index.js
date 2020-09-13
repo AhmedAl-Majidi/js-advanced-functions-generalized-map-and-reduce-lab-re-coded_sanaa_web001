@@ -12,3 +12,15 @@ function map(sourceArray,fun) {
 console.log(sourceArray,function(element) {
       return -1 * element;
   });
+
+  function reduce(sourceArray, cb, starting){
+  
+    let arr=[];
+
+    
+    for (; i < sourceArray.length; i++) {
+      arr = cb(sourceArray[i], arr)
+    }
+  
+    return arr;
+  }
