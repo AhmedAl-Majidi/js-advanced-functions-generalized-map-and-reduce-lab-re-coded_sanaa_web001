@@ -22,12 +22,12 @@ console.log(sourceArray,function(element) {
       arr =  sourceArray[0];
       i=1;
     }
-  
 
-    
+
+
     for (; i < sourceArray.length; i++) {
       arr = cb(sourceArray[i], arr)
     }
-  
+
     return arr;
   }
