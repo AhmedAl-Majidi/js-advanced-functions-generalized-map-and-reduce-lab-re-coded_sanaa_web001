@@ -23,8 +23,6 @@ console.log(sourceArray,function(element) {
       i=1;
     }
 
-
-
     for (; i < sourceArray.length; i++) {
       arr = cb(sourceArray[i], arr)
     }
