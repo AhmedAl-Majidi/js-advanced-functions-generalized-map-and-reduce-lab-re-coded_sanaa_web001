@@ -14,13 +14,13 @@ console.log(sourceArray,function(element) {
   });
 
   function reduce(sourceArray, cb, starting){
-  
+
     let arr=[];
 
-    
+
     for (; i < sourceArray.length; i++) {
       arr = cb(sourceArray[i], arr)
     }
-  
+
     return arr;
   }
