@@ -18,7 +18,7 @@ console.log(sourceArray,function(element) {
     let arr=[];
 
 
-    for (; i < sourceArray.length; i++) {
+    for (let i =0; i < sourceArray.length; i++) {
       arr = cb(sourceArray[i], arr)
     }
 
